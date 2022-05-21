@@ -1,0 +1,28 @@
+{
+  "name": "bcrypten",
+  "version": "1.0.0",
+  "description": "Another layer of security on top of the existing bcrypt",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-codes14/bcrypten.git"
+  },
+  "keywords": [
+    "hashing",
+    "salting",
+    "encryption"
+  ],
+  "author": "https://github.com/s-codes14",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-codes14/bcrypten/issues"
+  },
+  "homepage": "https://github.com/s-codes14/bcrypten#readme",
+  "dependencies": {
+    "cryptr": "^6.0.3",
+    "bcrypt": "^5.0.1"
+  }
+}
