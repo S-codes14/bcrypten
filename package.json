@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/s-codes14/bcrypten#readme",
   "dependencies": {
-    "cryptr": "^6.0.3",
-    "bcrypt": "^5.0.1"
+    "bcrypt": "^5.0.1",
+    "cryptr": "^6.0.3"
   }
 }

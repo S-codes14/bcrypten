@@ -18,9 +18,9 @@ const bcrypt = require ('bcrypt');
 
 
 class Bcrypten {
-  async hash(data, secret, saltRounds=10) {
+  hash(data, secret, saltRounds=10) {
     var cryptr = new Cryptr(secret);
-    let passwordHash = await bcrypt.hash(data, saltRounds)
+    let passwordHash = bcrypt.hashSync(data, saltRounds)
     return cryptr.encrypt(passwordHash);
 
     
@@ -28,7 +28,7 @@ class Bcrypten {
   compare(pass1, data, secret) {
     var cryptr = new Cryptr(secret);
     var password = cryptr.decrypt(data);
-    return bcrypt.compare(pass1, password)
+    return bcrypt.compareSync(pass1, password)
 
    
   }
